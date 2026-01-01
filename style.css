@@ -1,0 +1,56 @@
+ body{
+            margin:0px;
+            padding: 0px;
+         
+        }
+        ul{
+         list-style-type: none;
+            margin: 70px;
+            margin-top:20px ;
+margin-left: 100px;
+             position: fixed; 
+            justify-self: center;
+            
+        }
+       ul li{
+            margin: 0px;
+            padding: 0px;
+            width:204px;
+           font-size: 30px;
+                       border:4px solid yellow;
+                      border-radius:12px;
+        }
+        ul#ul2 li{
+            float: left;
+        }
+
+        li a{
+          text-decoration: none;
+          color: yellow;
+          display: block;
+                     transition:font-size 1s , font-family 1s;
+                                text-align: center;
+     
+          
+        }
+    
+        
+        li a:hover{
+            background-color: black;
+            font-family: Times New Roman;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        h1{
+            font-family: Times New Roman;
+            text-align: center;
+        }
+                 img{
+             position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100vw;
+  height: 1000px;
+  z-index: -1;
+  object-fit: cover;
+         }
