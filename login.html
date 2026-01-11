@@ -1,77 +1,160 @@
-<html>
-    <head>
-        <title>
-            Booking Page
-        </title>
-        <style>
-            div{
-                background-color: antiquewhite;
-                border: 5px solid aquamarine;
-                border-radius: 24px;
-                justify-content: center;
-                align-items: center;
-                align-self: center;
-                margin-left: 500px;
-                margin-right: 500px;
-                padding-top: 20px;
-                padding-right: 20px;
-                padding-bottom: 20px;
-                height: 600px;
-            }
-            input{
-                border-radius: 10px;
-                background-color: azure;
-                font-size: larger;                
-              margin-left: 60px;
-            
-                text-align: center;
-                
+<!DOCTYPE html>
+<html lang="en">
 
-            }
-            #btn1{
-                border-radius: 13px;
-                background-color: aqua;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Booking Page
+    </title>
 
-            }
-                        #btn2{
-                border-radius: 13px;
-                background-color: aqua;}
+    <style>
+        div {
+            background-color: antiquewhite;
+            border: 5px solid aquamarine;
+            border-radius: 24px;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            height: 600px;
+            box-shadow: 0px 14px 20px rgba(36, 97, 11, 0.3);
+            transition: box-shadow 1s;
 
-            #btn1:hover{
-                background-color: blue;
-            }
-            #btn2:hover{
-                background-color:red;
-            }
-           body{
+        }
+
+        div:hover {
+            box-shadow: 0px 17px 23px rgba(0, 0, 0, 0.9);
+            transition: box-shadow 1s;
+        }
+
+        input {
+            border-radius: 10px;
+            background-color: azure;
+            font-size: larger;
+            margin-left: 60px;
+
+            text-align: center;
+            box-shadow: 0px 14px 20px rgba(36, 97, 11, 0.3);
+            transition: box-shadow 1s;
+
+        }
+
+        input:hover {
+            box-shadow: 0px 17px 23px rgba(0, 0, 0, 0.9);
+            transition: box-shadow 1s;
+        }
+
+        #btn1 {
+            border-radius: 13px;
+            background-color: aqua;
+
+        }
+
+        #btn2 {
+            border-radius: 13px;
+            background-color: aqua;
+        }
+
+        #btn1:hover {
+            background-color: blue;
+        }
+
+        #btn2:hover {
+            background-color: red;
+        }
+
+        body {
             background-color: #f1f8f4;
-           }
-        </style>
-    </head>
-    <body>
-        <h1 style="font-family: 'Times New Roman', Times, serif; color: greenyellow; text-align: center; text-decoration: underline; ">BOOK NOW </h1>
-        <div id="div1">
-            <input type="text" placeholder="Fullname"><br><br><br><br><br>
-            <input type="text" placeholder="Address"><br><br><br><br><br>
-            <input type="text" placeholder="place name"><br><br><br><br><br>
-            <input type="date" placeholder="journey date"><br><br>
-            
-           <p style="font-size: larger; font-family: 'Times New Roman', Times, serif; padding-left: 60px; padding-bottom: 0px; padding-top: 0px;">Choose your medium of transport </p>
-                 <input type="checkbox" placeholder="choose medium of transport" style="font-size: larger; font-family: 'Times New Roman', Times, serif;">
-                By Air
-                
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: greenyellow;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 60px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        input {
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        select {
+            border-radius: 10px;
+            background-color: azure;
+            font-size: larger;
+            margin-left: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            box-shadow: 0px 14px 20px rgba(36, 97, 11, 0.3);
+            transition: box-shadow 1s;
+        }
+
+        select:hover {
+            box-shadow: 0px 17px 23px rgba(0, 0, 0, 0.9);
+            transition: box-shadow 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BOOK NOW </h1>
+    <div>
+        <form id="f">
+            <input type="text" placeholder="Fullname" name="name" required><br><br><br><br>
+            <input type="email" placeholder="gmail.com" name="email" required><br><br><br><br>
+            <select type="text" title="place name" name="place" required>
+                <option value="Vaishno Mata Temple">Vaishno Mata Temple</option>
+                <option value="Vaishno Mata Darshan">Vaishno Mata Darshan</option>
+                <option value="Kedarnath Temple">Kedarnath Temple</option>
+                <option value="Kullu Manali">Kullu Manali</option>
+                <option value="Bodh Gaya">Bodh Gaya</option>
+                <option value="Naina Devi Temple">Naina Devi Temple</option>
+            </select><br><br><br><br>
+            <input type="text" placeholder="address" name="address" required><br><br><br><br>
+            <input type="date" placeholder="journey date" name="date" required><br><br>
+
+            <p>Choose your medium of transport </p>
+            <input type="checkbox" placeholder="choose medium of transport" name="medium of transport">
+            By Air
+
             <br>
-                  
-                 <input type="checkbox" placeholder="choose medium of transport" style="font-size: larger; font-family: 'Times New Roman', Times, serif; ">
-                By Land <br><br><br><br><br><br>
-               <input id="btn1" type="submit" type="button" onclick='document.getElementById("link").innerHTML=alert("Your data has been sent to the visiting sent")'>
-               <input id="btn2" type="reset" onclick="clearform()"/>
-               <script>
-                 function clearform() {
-                    document.getElementById("div1").reset();
-                 }
-               </script>
-        
-        </div>
-    </body>
+
+            <input type="checkbox" placeholder="choose medium of transport" name="medium of transport">
+            By Land <br><br><br><br><br><br>
+            <input id="btn1" type="submit" type="button"
+                onclick='document.getElementById("link").innerHTML=alert("Your data has been sent to the visiting site")'>
+
+            <input id="btn2" type="reset">
+        </form>
+    </div>
+    <script>
+        document.getElementById("f").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            fetch("https://script.google.com/macros/s/AKfycbwkvN4fOVxHevMNUrgmgDJdMv6uMKDSGc0gXDlwUOuRsnW8WnJZ3VhgGCsCijxkDHXw/exec", {
+                method: "POST",
+                body: new FormData(this)
+            })
+                .then(r => r.text())
+                .then(t => alert(t))
+                .catch(e => alert("Failed"));
+        });
+    </script>
+</body>
+
 </html>
